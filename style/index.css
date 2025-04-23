@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+
+body, html {
+    height: 100%;
+}
+
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgb(200, 40, 40);
+    color: white;
+}
+
+
+.information{
+    padding: 15px 0 15px 0;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(200, 40, 40);
+}
+
+#hamburguer-container{
+    display: flex;
+    justify-content: center;
+}
+
+#hamburguer{
+    border: 1px solid rgb(186, 186, 186);
+    box-shadow: 0px 5px 20px rgb(139, 139, 139);
+    padding: 30px;
+    padding-right: 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(215, 215, 215);
+}
+
+#image-container{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#hamburguer-image{
+    width: 400px;
+    height: 100%;
+    border-radius: 10px;
+    user-select: none;
+    pointer-events: none;
+}
+
+#info-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#name-container{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#details-container{
+    cursor: pointer;
+}
+
+#details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burguer-info{
+    text-align: left;
+}
+
+#price{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#button-container{
+    width: 80%;
+}
+
+#button{
+    width: 100%;
+}
+
+#buy-button{
+    width: 100%;
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(12, 161, 12);
+    color: white;
+    font-weight: 600;
+    transition: 0.2s all ease-in-out;
+}
+
+#buy-button:hover{
+    scale: 105%;
+    background-color: rgb(11, 136, 11);
+}
+
+#details-container ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.burguer-info {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    #hamburguer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #hamburguer-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #info-container {
+        width: 100%;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    #button-container {
+        width: 80%;
+    }
+
+    #buy-button {
+        font-size: 16px;
+    }
+
+    #name-container {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    summary {
+        font-size: 16px;
+    }
+
+    #price p {
+        font-size: 20px;
+    }
+}
